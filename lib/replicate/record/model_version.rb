@@ -8,7 +8,7 @@ module Replicate
         params[:version] = id
         params[:input] = input
         params[:webhook_completed] = webhook_completed
-        client.create_prediction(params)
+        @client.create_prediction(params)
       end
     end
   end
